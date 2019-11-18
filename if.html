@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>if</title>
+        <script>
+            function ContinueClick(){
+         var number=document.getElementById("txtNum").value;
+             if(number==1){
+                document.write("one");
+            }else if(number==2){
+                document.write("two");
+            }
+            else if(number>=3 && number<=10){
+                document.write("number is between 3 to 10");
+            }
+            else if(number>=10 && number<=20){
+                document.write("number is between 10 to 20");
+            }
+            else if(number>=20){
+                document.write("number is greater than 20");
+            }
+            else if(number<<0){
+                document.write("please enter number from 0 to 20");
+            }
+            else{
+                document.write("zero")
+            }
+        }
+        </script>
+    </head>
+    <body>
+        number:
+        <input type="text" id="txtNum">
+        <input type="button" value="continue" onclick="ContinueClick()">
+    </body>
+</html>
